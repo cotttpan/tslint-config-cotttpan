@@ -1,0 +1,28 @@
+{
+  "name": "@cotto/tslint-config",
+  "description": "@cotto/tslint-config",
+  "version": "0.0.1",
+  "author": "cotto",
+  "bugs": {
+    "url": "https://github.com/cotttpan/tslint-config-cotttpan/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "npm-run-all": "^4.0.2",
+    "tslint": "^5.1.0",
+    "typescript": "^2.2.2"
+  },
+  "files": [
+    "src",
+    "README.md",
+    "LICENCE"
+  ],
+  "keywords": [],
+  "license": "MIT",
+  "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cotttpan/tslint-config-cotttpan.git"
+  },
+  "scripts": {}
+}
