@@ -163,10 +163,6 @@
             "always",
             "ignore-bound-class-methods"
         ],
-        "space-before-function-paren": [
-            true,
-            "always"
-        ],
         "variable-name": [
             true,
             "ban-keywords",
@@ -303,10 +299,6 @@
             true,
             "always",
             "ignore-bound-class-methods"
-        ],
-        "space-before-function-paren": [
-            true,
-            "always"
         ],
         "variable-name": [
             true,

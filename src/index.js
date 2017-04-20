@@ -162,10 +162,6 @@ module.exports = {
             'always',
             'ignore-bound-class-methods',
         ],
-        'space-before-function-paren': [
-            true,
-            'always',
-        ],
         'variable-name': [
             true,
             'ban-keywords',
@@ -302,10 +298,6 @@ module.exports = {
             true,
             'always',
             'ignore-bound-class-methods',
-        ],
-        'space-before-function-paren': [
-            true,
-            'always',
         ],
         'variable-name': [
             true,
