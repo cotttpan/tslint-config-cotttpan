@@ -126,7 +126,6 @@ module.exports = {
         ],
         'import-spacing': true,
         'jsdoc-format': true,
-        'newline-before-return': true,
         'new-parens': true,
         'no-angle-bracket-type-assertion': true,
         'no-boolean-literal-compare': true,
@@ -268,7 +267,6 @@ module.exports = {
         ],
         'import-spacing': true,
         'jsdoc-format': true,
-        'newline-before-return': true,
         'new-parens': true,
         'no-consecutive-blank-lines': [
             true,
