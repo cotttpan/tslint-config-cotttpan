@@ -6,15 +6,15 @@ module.exports = {
         'member-ordering': [
             true,
             {
-                'order': 'static-first',
-            },
+                'order': 'static-first'
+            }
         ],
         'no-any': false,
         'no-empty-interface': true,
         'no-inferrable-types': [
             true,
             'ignore-params',
-            'ignore-properties',
+            'ignore-properties'
         ],
         'no-internal-module': true,
         'no-reference': true,
@@ -25,22 +25,22 @@ module.exports = {
                 'index-signature': 'nospace',
                 'parameter': 'nospace',
                 'property-declaration': 'nospace',
-                'variable-declaration': 'nospace',
+                'variable-declaration': 'nospace'
             },
             {
                 'call-signature': 'onespace',
                 'index-signature': 'onespace',
                 'parameter': 'onespace',
                 'property-declaration': 'onespace',
-                'variable-declaration': 'onespace',
-            },
+                'variable-declaration': 'onespace'
+            }
         ],
         'unified-signatures': true,
         ///// Functionality /////
         'await-promise': true,
         'curly': [
             true,
-            'ignore-same-line',
+            'ignore-same-line'
         ],
         'forin': true,
         'label-position': true,
@@ -54,7 +54,7 @@ module.exports = {
             'log',
             'time',
             'timeEnd',
-            'trace',
+            'trace'
         ],
         'no-construct': true,
         'no-debugger': true,
@@ -75,7 +75,7 @@ module.exports = {
         'no-unsafe-finally': true,
         'no-unused-expression': [
             true,
-            'allow-fast-null-checks',
+            'allow-fast-null-checks'
         ],
         'no-use-before-declare': true,
         'no-var-keyword': true,
@@ -86,43 +86,43 @@ module.exports = {
         'use-isnan': true,
         ///// Maintainability /////
         'cyclomatic-complexity': [
-            true,
+            true
         ],
         'eofline': true,
         'indent': [
             true,
-            'spaces',
+            'spaces'
         ],
         'linebreak-style': [
             true,
-            'LF',
+            'LF'
         ],
         'max-line-length': [
             true,
-            180,
+            180
         ],
         'trailing-comma': [
             true,
             {
-                'multiline': 'always',
-                'singleline': 'never',
-            },
+                'multiline': 'never',
+                'singleline': 'never'
+            }
         ],
         ///// Style /////
         'align': [
             false,
             'parameters',
             'arguments',
-            'statements',
+            'statements'
         ],
         'array-type': [
             true,
-            'array',
+            'array'
         ],
         'class-name': true,
         'comment-format': [
             true,
-            'check-space',
+            'check-space'
         ],
         'import-spacing': true,
         'jsdoc-format': true,
@@ -131,7 +131,7 @@ module.exports = {
         'no-boolean-literal-compare': true,
         'no-consecutive-blank-lines': [
             true,
-            2,
+            2
         ],
         'no-parameter-properties': true,
         'no-reference-import': true,
@@ -146,27 +146,27 @@ module.exports = {
             'check-finally',
             'check-else',
             'check-open-brace',
-            'check-whitespace',
+            'check-whitespace'
         ],
         'one-variable-per-declaration': [
-            true,
+            true
         ],
         'quotemark': [
             true,
             'single',
-            'avoid-escape',
+            'avoid-escape'
         ],
         'semicolon': [
             true,
             'always',
-            'ignore-bound-class-methods',
+            'ignore-bound-class-methods'
         ],
         'variable-name': [
             true,
             'ban-keywords',
             'check-format',
             'allow-pascal-case',
-            'allow-leading-underscore',
+            'allow-leading-underscore'
         ],
         'whitespace': [
             true,
@@ -175,20 +175,20 @@ module.exports = {
             'check-operator',
             'check-separator',
             'check-type',
-            'check-typecast',
-        ],
+            'check-typecast'
+        ]
     },
     'jsRules': {
         'member-ordering': [
             true,
             {
-                'order': 'static-first',
-            },
+                'order': 'static-first'
+            }
         ],
         'await-promise': true,
         'curly': [
             true,
-            'ignore-same-line',
+            'ignore-same-line'
         ],
         'forin': true,
         'label-position': true,
@@ -202,7 +202,7 @@ module.exports = {
             'log',
             'time',
             'timeEnd',
-            'trace',
+            'trace'
         ],
         'no-construct': true,
         'no-debugger': true,
@@ -220,7 +220,7 @@ module.exports = {
         'no-unsafe-finally': true,
         'no-unused-expression': [
             true,
-            'allow-fast-null-checks',
+            'allow-fast-null-checks'
         ],
         'no-use-before-declare': true,
         'no-var-keyword': true,
@@ -231,46 +231,46 @@ module.exports = {
         'use-isnan': true,
         ///// Maintainability /////
         'cyclomatic-complexity': [
-            true,
+            true
         ],
         'eofline': true,
         'indent': [
             true,
-            'spaces',
+            'spaces'
         ],
         'linebreak-style': [
             true,
-            'LF',
+            'LF'
         ],
         'max-line-length': [
             true,
-            180,
+            180
         ],
         'trailing-comma': [
             true,
             {
-                'multiline': 'always',
-                'singleline': 'never',
-            },
+                'multiline': 'never',
+                'singleline': 'never'
+            }
         ],
         ///// Style /////
         'align': [
             false,
             'parameters',
             'arguments',
-            'statements',
+            'statements'
         ],
         'class-name': true,
         'comment-format': [
             true,
-            'check-space',
+            'check-space'
         ],
         'import-spacing': true,
         'jsdoc-format': true,
         'new-parens': true,
         'no-consecutive-blank-lines': [
             true,
-            2,
+            2
         ],
         'no-trailing-whitespace': true,
         'no-unnecessary-callback-wrapper': true,
@@ -282,27 +282,27 @@ module.exports = {
             'check-finally',
             'check-else',
             'check-open-brace',
-            'check-whitespace',
+            'check-whitespace'
         ],
         'one-variable-per-declaration': [
-            true,
+            true
         ],
         'quotemark': [
             true,
             'single',
-            'avoid-escape',
+            'avoid-escape'
         ],
         'semicolon': [
             true,
             'always',
-            'ignore-bound-class-methods',
+            'ignore-bound-class-methods'
         ],
         'variable-name': [
             true,
             'ban-keywords',
             'check-format',
             'allow-pascal-case',
-            'allow-leading-underscore',
+            'allow-leading-underscore'
         ],
         'whitespace': [
             true,
@@ -311,7 +311,7 @@ module.exports = {
             'check-operator',
             'check-separator',
             'check-type',
-            'check-typecast',
-        ],
-    },
+            'check-typecast'
+        ]
+    }
 };
