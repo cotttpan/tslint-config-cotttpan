@@ -6,7 +6,7 @@ module.exports = {
         'member-ordering': [
             true,
             {
-                'order': 'static-first'
+                'order': 'statics-first'
             }
         ],
         'no-any': false,
