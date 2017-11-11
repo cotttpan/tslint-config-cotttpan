@@ -1,28 +1,32 @@
 {
   "name": "@cotto/tslint-config",
   "description": "@cotto/tslint-config",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "author": "cotto",
   "bugs": {
     "url": "https://github.com/cotttpan/tslint-config-cotttpan/issues"
   },
   "dependencies": {},
   "devDependencies": {
-    "npm-run-all": "^4.1.1",
-    "tslint": "^5.7.0",
-    "typescript": "^2.5.2"
+    "@types/node": "^8.0.51",
+    "npm-run-all": "^4.1.2",
+    "tslint": "^5.8.0",
+    "typescript": "^2.6.1"
   },
   "files": [
-    "src",
+    "dist",
     "README.md",
     "LICENCE"
   ],
   "keywords": [],
   "license": "MIT",
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/cotttpan/tslint-config-cotttpan.git"
   },
-  "scripts": {}
+  "scripts": {
+    "build": "tsc",
+    "clean": "rimraf ./dist"
+  }
 }

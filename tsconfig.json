@@ -6,7 +6,7 @@
         "lib": [
             "es2017"
         ],
-        "declaration": true,
+        "declaration": false,
         "outDir": "dist",
         "strictNullChecks": true,
         "noImplicitAny": true,
@@ -16,9 +16,10 @@
         "noUnusedLocals": true,
         "noUnusedParameters": true,
         "noEmitOnError": true,
-        "sourceMap": true,
+        "sourceMap": false,
         "forceConsistentCasingInFileNames": true,
         "skipDefaultLibCheck": true,
+        "skipLibCheck": true,
         "pretty": true,
         "types": [
             "node"
