@@ -1,6 +1,6 @@
-/* tslint:disable:
-object-literal-sort-keys
- */
+/* tslint:disable:object-literal-sort-keys */
+import { omit } from '@cotto/utils.ts'
+
 const rules = {
     'adjacent-overload-signatures': true,
     align: {
@@ -15,7 +15,9 @@ const rules = {
     'array-type': {
         options: ['array-simple'],
     },
-    'arrow-parens': true,
+    'arrow-parens': {
+        options: ['ban-single-arg-parens'],
+    },
     'arrow-return-shorthand': true,
     'await-promise': true,
     'callable-types': true,
@@ -77,7 +79,6 @@ const rules = {
     'no-inferrable-types': true,
     'no-internal-module': true,
     'no-invalid-template-strings': true,
-    'no-invalid-this': true,
     'no-irregular-whitespace': true,
     'no-mergeable-namespace': true,
     'no-misused-new': true,
@@ -198,8 +199,6 @@ const rules = {
 
 module.exports = {
     defaultSeverity: 'warn',
-    rules: {
-        ...rules,
-        jsRules: rules,
-    },
+    rules,
+    jsRules: omit(rules, require('./ts-only')),
 }

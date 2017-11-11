@@ -1,12 +1,14 @@
 {
   "name": "@cotto/tslint-config",
   "description": "@cotto/tslint-config",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "author": "cotto",
   "bugs": {
     "url": "https://github.com/cotttpan/tslint-config-cotttpan/issues"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@cotto/utils.ts": "^0.2.0"
+  },
   "devDependencies": {
     "@types/node": "^8.0.51",
     "npm-run-all": "^4.1.2",
