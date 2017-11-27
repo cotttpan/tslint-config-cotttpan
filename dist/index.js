@@ -4,24 +4,24 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const utils_ts_1 = require("@cotto/utils.ts");
 const rules = {
     'adjacent-overload-signatures': true,
-    align: {
-        options: [
-            'parameters',
-            'arguments',
-            'statements',
-            'elements',
-            'members',
-        ],
-    },
+    // align: {
+    //     options: [
+    //         'parameters',
+    //         'arguments',
+    //         'statements',
+    //         'elements',
+    //         'members',
+    //     ],
+    // },
     'array-type': {
-        options: ['array-simple'],
+        options: 'array',
     },
     'arrow-parens': {
         options: ['ban-single-arg-parens'],
     },
     'arrow-return-shorthand': true,
     'await-promise': true,
-    'callable-types': true,
+    'callable-types': false,
     'class-name': true,
     'comment-format': {
         options: ['check-space'],
@@ -30,7 +30,7 @@ const rules = {
     forin: false,
     'import-spacing': true,
     indent: {
-        options: ['spaces', 2],
+        options: ['spaces', 4],
     },
     'jsdoc-format': true,
     'label-position': true,
@@ -121,8 +121,6 @@ const rules = {
     'one-variable-per-declaration': {
         options: ['ignore-for-loop'],
     },
-    'prefer-const': true,
-    'prefer-template': true,
     'promise-function-async': true,
     quotemark: {
         options: [
