@@ -150,7 +150,12 @@ const rules = {
             singleline: 'never',
         },
     },
-    'triple-equals': true,
+    'triple-equals': {
+        options: [
+            'allow-undefined-check',
+            'allow-null-check',
+        ],
+    },
     // TODO: auto fixが来たら追加したい
     // 'type-literal-delimiter': true,
     'typedef-whitespace': {
