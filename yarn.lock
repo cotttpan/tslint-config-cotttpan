@@ -2,19 +2,15 @@
 # yarn lockfile v1
 
 
-"@cotto/utils.ts@^0.2.0":
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/@cotto/utils.ts/-/utils.ts-0.2.0.tgz#e9d087e1d226b5d8ec68e89b6dbdd5d5d0b9e022"
+"@cotto/utils.ts@^0.2.3":
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/@cotto/utils.ts/-/utils.ts-0.2.3.tgz#ee431d55cbaaa3a8497e6e7a6be7ba3c3dbcdcf0"
   dependencies:
-    "@types/node" "^8.0.33"
+    "@types/node" "^8.5.1"
 
-"@types/node@^8.0.33":
-  version "8.0.51"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-8.0.51.tgz#b31d716fb8d58eeb95c068a039b9b6292817d5fb"
-
-"@types/node@^8.0.53":
-  version "8.0.53"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-8.0.53.tgz#396b35af826fa66aad472c8cb7b8d5e277f4e6d8"
+"@types/node@^8.5.1", "@types/node@^8.5.2":
+  version "8.5.2"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-8.5.2.tgz#83b8103fa9a2c2e83d78f701a9aa7c9539739aa5"
 
 ansi-regex@^2.0.0:
   version "2.0.0"
