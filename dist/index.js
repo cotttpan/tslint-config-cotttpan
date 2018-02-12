@@ -79,6 +79,7 @@ const rules = {
     'object-literal-key-quotes': {
         options: ['as-needed'],
     },
+    'object-literal-sort-keys': false,
     'ordered-imports': false,
     'promise-function-async': true,
     'quotemark': {
