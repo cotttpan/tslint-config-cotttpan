@@ -3,6 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 /* tslint:disable:object-literal-sort-keys */
 const utils_ts_1 = require("@cotto/utils.ts");
 const rules = {
+    prettier: false,
     'adjacent-overload-signatures': true,
     // align: {
     //     options: [
@@ -30,7 +31,7 @@ const rules = {
     forin: false,
     'import-spacing': true,
     indent: {
-        options: ['spaces', 4],
+        options: ['spaces', 2],
     },
     'jsdoc-format': true,
     'label-position': true,
