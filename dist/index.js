@@ -1,101 +1,73 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-/* tslint:disable:object-literal-sort-keys */
+/* tslint:disable:object-literal-sort-keys object-literal-key-quotes */
 const utils_ts_1 = require("@cotto/utils.ts");
 const rules = {
-    prettier: false,
+    // prettier
+    'prettier': false,
+    // tslint-eslint
+    'ter-indent': [true, 2],
+    // tslint-react
+    'jsx-no-multiline-js': false,
+    'jsx-no-lambda': false,
+    // tslint
     'adjacent-overload-signatures': true,
-    // align: {
-    //     options: [
-    //         'parameters',
-    //         'arguments',
-    //         'statements',
-    //         'elements',
-    //         'members',
-    //     ],
-    // },
+    'align': {
+        'options': [
+            'parameters',
+            'arguments',
+            'statements',
+            'elements',
+            'members',
+        ],
+    },
     'array-type': {
-        options: 'array',
+        'options': 'array',
     },
     'arrow-parens': {
-        options: ['ban-single-arg-parens'],
+        'options': ['ban-single-arg-parens'],
     },
-    'arrow-return-shorthand': true,
     'await-promise': true,
-    'callable-types': false,
-    'class-name': true,
-    'comment-format': {
-        options: ['check-space'],
+    'ban-types': {
+        'options': [
+            ['Object', 'Avoid using the `Object` type. Did you mean `object`?'],
+            ['Boolean', 'Avoid using the `Boolean` type. Did you mean `boolean`?'],
+            ['Number', 'Avoid using the `Number` type. Did you mean `number`?'],
+            ['String', 'Avoid using the `String` type. Did you mean `string`?'],
+            ['Symbol', 'Avoid using the `Symbol` type. Did you mean `symbol`?'],
+        ],
     },
-    curly: true,
-    forin: false,
-    'import-spacing': true,
-    indent: {
+    'callable-types': false,
+    'forin': false,
+    'indent': {
         options: ['spaces', 2],
     },
-    'jsdoc-format': true,
-    'label-position': true,
+    'interface-name': false,
     'linebreak-style': {
         options: ['LF'],
     },
     'max-line-length': {
-        options: [180],
+        options: [120],
     },
-    'member-ordering': {
-        options: {
-            order: 'statics-first',
-        },
-    },
-    'new-parens': true,
-    'no-angle-bracket-type-assertion': true,
-    'no-arg': true,
-    'no-bitwise': true,
-    'no-boolean-literal-compare': true,
-    'no-conditional-assignment': true,
+    'member-access': false,
     'no-consecutive-blank-lines': {
         options: [2],
     },
-    'no-console': {
-        options: [
-            'debug',
-            'info',
-            'log',
-            'time',
-            'timeEnd',
-            'trace',
-        ],
-    },
-    'no-construct': true,
-    'no-debugger': true,
     'no-duplicate-imports': true,
-    'no-duplicate-super': true,
     'no-duplicate-switch-case': true,
     'no-duplicate-variable': true,
-    'no-empty': true,
-    'no-eval': true,
-    'no-floating-promises': true,
+    'no-empty-interface': false,
     'no-for-in-array': true,
-    'no-implicit-dependencies': {
-        options: ['dev'],
-    },
     'no-inferrable-types': true,
-    'no-internal-module': true,
     'no-invalid-template-strings': true,
     'no-irregular-whitespace': true,
     'no-mergeable-namespace': true,
-    'no-misused-new': true,
     'no-parameter-properties': true,
-    'no-reference': true,
-    'no-reference-import': true,
     'no-return-await': true,
-    'no-shadowed-variable': true,
     'no-sparse-arrays': true,
-    'no-string-throw': true,
     'no-switch-case-fall-through': true,
-    'no-trailing-whitespace': true,
     'no-unbound-method': true,
     'no-unnecessary-callback-wrapper': true,
-    'no-unnecessary-initializer': true,
     'no-unnecessary-qualifier': true,
     'no-unsafe-any': true,
     'no-unsafe-finally': true,
@@ -104,33 +76,18 @@ const rules = {
             'allow-fast-null-checks',
         ],
     },
-    'no-use-before-declare': true,
-    'no-var-keyword': true,
     'object-literal-key-quotes': {
         options: ['as-needed'],
     },
-    'object-literal-shorthand': true,
-    'one-line': {
-        options: [
-            'check-catch',
-            'check-finally',
-            'check-else',
-            'check-open-brace',
-            'check-whitespace',
-        ],
-    },
-    'one-variable-per-declaration': {
-        options: ['ignore-for-loop'],
-    },
+    'ordered-imports': false,
     'promise-function-async': true,
-    quotemark: {
+    'quotemark': {
         options: [
             'single',
             'avoid-escape',
         ],
     },
-    radix: true,
-    semicolon: {
+    'semicolon': {
         options: ['never'],
     },
     'space-before-function-paren': {
@@ -146,12 +103,6 @@ const rules = {
         options: [0],
     },
     'switch-default': true,
-    'trailing-comma': {
-        options: {
-            multiline: 'always',
-            singleline: 'never',
-        },
-    },
     'triple-equals': {
         options: [
             'allow-undefined-check',
@@ -160,26 +111,6 @@ const rules = {
     },
     // TODO: auto fixが来たら追加したい
     // 'type-literal-delimiter': true,
-    'typedef-whitespace': {
-        options: [
-            {
-                'call-signature': 'nospace',
-                'index-signature': 'nospace',
-                parameter: 'nospace',
-                'property-declaration': 'nospace',
-                'variable-declaration': 'nospace',
-            },
-            {
-                'call-signature': 'onespace',
-                'index-signature': 'onespace',
-                parameter: 'onespace',
-                'property-declaration': 'onespace',
-                'variable-declaration': 'onespace',
-            },
-        ],
-    },
-    'typeof-compare': true,
-    'unified-signatures': true,
     'use-default-type-parameter': true,
     'use-isnan': true,
     'variable-name': {
@@ -188,21 +119,13 @@ const rules = {
             'check-format',
             'allow-pascal-case',
             'allow-leading-underscore',
-        ],
-    },
-    whitespace: {
-        options: [
-            'check-branch',
-            'check-decl',
-            'check-operator',
-            'check-separator',
-            'check-type',
-            'check-typecast',
+            'allow-trailing-underscore',
         ],
     },
 };
 module.exports = {
     defaultSeverity: 'warn',
+    extends: ['tslint:recommended', 'tslint-react', 'tslint-eslint-rules'],
     rules,
     jsRules: utils_ts_1.omit(rules, require('./ts-only')),
 };

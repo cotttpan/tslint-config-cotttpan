@@ -1,7 +1,7 @@
 {
   "name": "@cotto/tslint-config",
   "description": "@cotto/tslint-config",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": "cotto",
   "bugs": {
     "url": "https://github.com/cotttpan/tslint-config-cotttpan/issues"
