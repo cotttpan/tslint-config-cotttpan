@@ -6,7 +6,7 @@ const rules = {
     // prettier
     'prettier': false,
     // tslint-eslint
-    'ter-indent': [true, 2],
+    'ter-indent': [true, 2, { 'SwitchCase': 1 }],
     // tslint-react
     'jsx-no-multiline-js': false,
     'jsx-no-lambda': false,
@@ -46,6 +46,7 @@ const rules = {
     'linebreak-style': {
         options: ['LF'],
     },
+    'interface-over-type-literal': false,
     'max-line-length': {
         options: [120],
     },
@@ -62,6 +63,7 @@ const rules = {
     'no-invalid-template-strings': true,
     'no-irregular-whitespace': true,
     'no-mergeable-namespace': true,
+    'no-namespace': false,
     'no-parameter-properties': true,
     'no-return-await': true,
     'no-sparse-arrays': true,
