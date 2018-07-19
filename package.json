@@ -1,13 +1,13 @@
 {
   "name": "@cotto/tslint-config",
   "description": "@cotto/tslint-config",
-  "version": "0.1.5",
+  "version": "0.2.0",
   "author": "nullabletypo",
   "bugs": {
-    "url": "https://github.com/nullabletypo/tslint-config-cotttpan/issues"
+    "url": "https://github.com/nullabletypo/tslint-config/issues"
   },
   "dependencies": {
-    "@cotto/utils.ts": "^0.2.13",
+    "f": "https://github.com/nullabletypo/f",
     "tslint-eslint-rules": "^5.3.1",
     "tslint-react": "^3.6.0"
   },
@@ -27,12 +27,12 @@
   "main": "dist/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/nullabletypo/tslint-config-cotttpan.git"
+    "url": "https://github.com/nullabletypo/tslint-config.git"
   },
   "scripts": {
-    "build": "tsc",
+    "compile": "tsc",
     "clean": "rimraf ./dist",
-    "prerelease": "run-s clean build",
-    "release": "npm publish --access=public"
+    "release:github": "git add . && git commit -am $npm_package_version --allow-empty && git tag $npm_package_version && git push && git push --tags",
+    "release": "run-s clean compile test release:github"
   }
 }

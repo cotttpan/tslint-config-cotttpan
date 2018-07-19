@@ -1,21 +1,28 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 /* tslint:disable:object-literal-sort-keys object-literal-key-quotes */
-const utils_ts_1 = require("@cotto/utils.ts");
+const f_1 = require("f");
 const rules = {
-    // prettier
+    //
+    // ─── PRETTIER ───────────────────────────────────────────────────────────────────
+    //
     'prettier': false,
-    // tslint-eslint
+    //
+    // ─── TSLINT-ESLINT ──────────────────────────────────────────────────────────────
+    //
     'ter-indent': [true, 2, { 'SwitchCase': 1 }],
-    // tslint-react
+    //
+    // ─── TSLINT-REACT ───────────────────────────────────────────────────────────────
+    //
     'jsx-no-multiline-js': false,
     'jsx-no-lambda': false,
-    // tslint
+    //
+    // ─── TSLINT ─────────────────────────────────────────────────────────────────────
+    //
     'adjacent-overload-signatures': true,
     'align': {
         'options': [
-            'parameters',
-            'arguments',
+            'parameter',
             'statements',
             'elements',
             'members',
@@ -130,5 +137,5 @@ module.exports = {
     defaultSeverity: 'warn',
     extends: ['tslint:recommended', 'tslint-react', 'tslint-eslint-rules'],
     rules,
-    jsRules: utils_ts_1.omit(rules, require('./ts-only')),
+    jsRules: f_1.omit(rules, require('./ts-only')),
 };

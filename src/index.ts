@@ -1,19 +1,27 @@
 /* tslint:disable:object-literal-sort-keys object-literal-key-quotes */
-import { omit } from '@cotto/utils.ts'
+import { omit } from 'f'
 
 const rules = {
-  // prettier
+  //
+  // ─── PRETTIER ───────────────────────────────────────────────────────────────────
+  //
   'prettier': false,
-  // tslint-eslint
+  //
+  // ─── TSLINT-ESLINT ──────────────────────────────────────────────────────────────
+  //
   'ter-indent': [true, 2, { 'SwitchCase': 1 }],
-  // tslint-react
+  //
+  // ─── TSLINT-REACT ───────────────────────────────────────────────────────────────
+  //
   'jsx-no-multiline-js': false,
   'jsx-no-lambda': false,
-  // tslint
+  //
+  // ─── TSLINT ─────────────────────────────────────────────────────────────────────
+  //
   'adjacent-overload-signatures': true,
   'align': {
     'options': [
-      'arguments',
+      'parameter',
       'statements',
       'elements',
       'members',
