@@ -1,7 +1,7 @@
 {
-  "name": "@cotto/tslint-config",
-  "description": "@cotto/tslint-config",
-  "version": "0.2.0",
+  "name": "tslint-config",
+  "description": "tslint-config",
+  "version": "0.2.1",
   "author": "nullabletypo",
   "bugs": {
     "url": "https://github.com/nullabletypo/tslint-config/issues"
