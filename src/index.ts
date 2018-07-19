@@ -13,7 +13,6 @@ const rules = {
   'adjacent-overload-signatures': true,
   'align': {
     'options': [
-      'parameters',
       'arguments',
       'statements',
       'elements',
