@@ -1,10 +1,10 @@
 {
   "name": "@cotto/tslint-config",
   "description": "@cotto/tslint-config",
-  "version": "0.1.4",
-  "author": "cotto",
+  "version": "0.1.5",
+  "author": "nullabletypo",
   "bugs": {
-    "url": "https://github.com/cotttpan/tslint-config-cotttpan/issues"
+    "url": "https://github.com/nullabletypo/tslint-config-cotttpan/issues"
   },
   "dependencies": {
     "@cotto/utils.ts": "^0.2.13",
@@ -27,7 +27,7 @@
   "main": "dist/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/cotttpan/tslint-config-cotttpan.git"
+    "url": "https://github.com/nullabletypo/tslint-config-cotttpan.git"
   },
   "scripts": {
     "build": "tsc",
