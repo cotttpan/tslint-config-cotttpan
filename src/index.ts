@@ -1,5 +1,4 @@
 /* tslint:disable:object-literal-sort-keys object-literal-key-quotes */
-import { omit } from 'f'
 
 const rules = {
   //
@@ -65,7 +64,9 @@ const rules = {
   'no-duplicate-variable': true,
   'no-empty-interface': false,
   'no-for-in-array': true,
-  'no-inferrable-types': true,
+  'no-inferrable-types': {
+    options: ['ignore-params'],
+  },
   'no-invalid-template-strings': true,
   'no-irregular-whitespace': true,
   'no-mergeable-namespace': true,
@@ -137,5 +138,5 @@ module.exports = {
   defaultSeverity: 'warn',
   extends: ['tslint:recommended', 'tslint-react', 'tslint-eslint-rules'],
   rules,
-  jsRules: omit(rules, require('./ts-only')),
+  jsRules: require('lodash.omit')(rules, require('./ts-only')),
 }
