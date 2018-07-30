@@ -1,7 +1,4 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 /* tslint:disable:object-literal-sort-keys object-literal-key-quotes */
-const f_1 = require("f");
 const rules = {
     //
     // ─── PRETTIER ───────────────────────────────────────────────────────────────────
@@ -66,7 +63,9 @@ const rules = {
     'no-duplicate-variable': true,
     'no-empty-interface': false,
     'no-for-in-array': true,
-    'no-inferrable-types': true,
+    'no-inferrable-types': {
+        options: ['ignore-params'],
+    },
     'no-invalid-template-strings': true,
     'no-irregular-whitespace': true,
     'no-mergeable-namespace': true,
@@ -137,5 +136,5 @@ module.exports = {
     defaultSeverity: 'warn',
     extends: ['tslint:recommended', 'tslint-react', 'tslint-eslint-rules'],
     rules,
-    jsRules: f_1.omit(rules, require('./ts-only')),
+    jsRules: require('lodash.omit')(rules, require('./ts-only')),
 };
