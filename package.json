@@ -7,7 +7,7 @@
     "url": "https://github.com/nullabletypo/tslint-config/issues"
   },
   "dependencies": {
-    "f": "https://github.com/nullabletypo/f",
+    "lodash.omit": "^4.5.0",
     "tslint-eslint-rules": "^5.3.1",
     "tslint-react": "^3.6.0"
   },
